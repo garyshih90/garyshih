@@ -46,39 +46,105 @@ const KEYWORDS = {
 };
 
 const ITEM_EMOJI_KEYWORDS = [
-  { keywords: ["banana", "bananas"], emoji: "🍌" },
+  { keywords: ["green apple"], emoji: "🍏" },
   { keywords: ["apple", "apples"], emoji: "🍎" },
-  { keywords: ["orange", "oranges"], emoji: "🍊" },
+  { keywords: ["pear", "pears"], emoji: "🍐" },
+  { keywords: ["tangerine", "mandarin", "orange", "oranges"], emoji: "🍊" },
+  { keywords: ["lemon", "lemons"], emoji: "🍋" },
+  { keywords: ["lime", "limes"], emoji: "🍋" },
+  { keywords: ["banana", "bananas"], emoji: "🍌" },
+  { keywords: ["watermelon"], emoji: "🍉" },
   { keywords: ["grape", "grapes"], emoji: "🍇" },
-  { keywords: ["strawberry", "strawberries", "berry", "berries"], emoji: "🍓" },
+  { keywords: ["strawberry", "strawberries"], emoji: "🍓" },
+  { keywords: ["blueberry", "blueberries", "berry", "berries"], emoji: "🫐" },
+  { keywords: ["melon", "cantaloupe", "honeydew"], emoji: "🍈" },
+  { keywords: ["cherry", "cherries"], emoji: "🍒" },
+  { keywords: ["peach", "peaches"], emoji: "🍑" },
+  { keywords: ["mango", "mangoes"], emoji: "🥭" },
+  { keywords: ["pineapple"], emoji: "🍍" },
+  { keywords: ["coconut"], emoji: "🥥" },
+  { keywords: ["kiwi", "kiwis"], emoji: "🥝" },
+  { keywords: ["tomato", "tomatoes"], emoji: "🍅" },
   { keywords: ["avocado", "avocados"], emoji: "🥑" },
-  { keywords: ["broccoli"], emoji: "🥦" },
+  { keywords: ["eggplant"], emoji: "🍆" },
+  { keywords: ["potato", "potatoes"], emoji: "🥔" },
   { keywords: ["carrot", "carrots"], emoji: "🥕" },
-  { keywords: ["bread", "bagel", "bagels", "croissant"], emoji: "🥖" },
-  { keywords: ["cake", "muffin"], emoji: "🧁" },
-  { keywords: ["chicken"], emoji: "🍗" },
-  { keywords: ["beef", "steak"], emoji: "🥩" },
-  { keywords: ["fish", "salmon", "shrimp"], emoji: "🐟" },
-  { keywords: ["milk"], emoji: "🥛" },
+  { keywords: ["corn"], emoji: "🌽" },
+  { keywords: ["hot pepper", "chili", "jalapeno"], emoji: "🌶️" },
+  { keywords: ["pepper"], emoji: "🫑" },
+  { keywords: ["cucumber"], emoji: "🥒" },
+  { keywords: ["leafy", "lettuce"], emoji: "🥬" },
+  { keywords: ["broccoli"], emoji: "🥦" },
+  { keywords: ["garlic"], emoji: "🧄" },
+  { keywords: ["onion", "onions"], emoji: "🧅" },
+  { keywords: ["mushroom", "mushrooms"], emoji: "🍄" },
+  { keywords: ["peanut", "peanuts"], emoji: "🥜" },
+  { keywords: ["beans"], emoji: "🫘" },
+  { keywords: ["chestnut"], emoji: "🌰" },
+  { keywords: ["bread", "bagel", "bagels", "croissant", "baguette"], emoji: "🥖" },
+  { keywords: ["pretzel"], emoji: "🥨" },
+  { keywords: ["flatbread"], emoji: "🫓" },
+  { keywords: ["pancake", "pancakes"], emoji: "🥞" },
+  { keywords: ["waffle", "waffles"], emoji: "🧇" },
   { keywords: ["cheese"], emoji: "🧀" },
+  { keywords: ["meat", "beef", "steak"], emoji: "🥩" },
+  { keywords: ["bacon"], emoji: "🥓" },
+  { keywords: ["burger", "hamburger"], emoji: "🍔" },
+  { keywords: ["fries", "french fries"], emoji: "🍟" },
+  { keywords: ["pizza"], emoji: "🍕" },
+  { keywords: ["hot dog"], emoji: "🌭" },
+  { keywords: ["sandwich"], emoji: "🥪" },
+  { keywords: ["taco", "tacos"], emoji: "🌮" },
+  { keywords: ["burrito"], emoji: "🌯" },
+  { keywords: ["tamale"], emoji: "🫔" },
+  { keywords: ["falafel"], emoji: "🧆" },
   { keywords: ["egg", "eggs"], emoji: "🥚" },
+  { keywords: ["chicken"], emoji: "🍗" },
+  { keywords: ["turkey"], emoji: "🦃" },
+  { keywords: ["dumpling", "dumplings"], emoji: "🥟" },
+  { keywords: ["ramen", "noodle", "noodles"], emoji: "🍜" },
+  { keywords: ["spaghetti", "pasta"], emoji: "🍝" },
   { keywords: ["rice"], emoji: "🍚" },
-  { keywords: ["pasta"], emoji: "🍝" },
+  { keywords: ["curry"], emoji: "🍛" },
+  { keywords: ["sushi"], emoji: "🍣" },
+  { keywords: ["fish", "salmon"], emoji: "🐟" },
+  { keywords: ["shrimp", "prawn"], emoji: "🍤" },
+  { keywords: ["lobster"], emoji: "🦞" },
+  { keywords: ["crab"], emoji: "🦀" },
+  { keywords: ["oyster"], emoji: "🦪" },
+  { keywords: ["squid"], emoji: "🦑" },
+  { keywords: ["milk"], emoji: "🥛" },
+  { keywords: ["butter"], emoji: "🧈" },
+  { keywords: ["ice cream"], emoji: "🍨" },
+  { keywords: ["shaved ice"], emoji: "🍧" },
+  { keywords: ["doughnut", "donut"], emoji: "🍩" },
+  { keywords: ["cookie", "cookies"], emoji: "🍪" },
+  { keywords: ["cake", "muffin", "cupcake"], emoji: "🧁" },
+  { keywords: ["birthday cake"], emoji: "🎂" },
+  { keywords: ["pie"], emoji: "🥧" },
+  { keywords: ["chocolate"], emoji: "🍫" },
+  { keywords: ["candy"], emoji: "🍬" },
+  { keywords: ["lollipop"], emoji: "🍭" },
+  { keywords: ["custard", "flan"], emoji: "🍮" },
+  { keywords: ["honey"], emoji: "🍯" },
   { keywords: ["coffee"], emoji: "☕" },
   { keywords: ["tea"], emoji: "🫖" },
-  { keywords: ["water"], emoji: "💧" },
+  { keywords: ["mate"], emoji: "🧉" },
+  { keywords: ["bubble tea", "boba"], emoji: "🧋" },
   { keywords: ["juice"], emoji: "🧃" },
+  { keywords: ["milkshake"], emoji: "🥤" },
   { keywords: ["soda"], emoji: "🥤" },
-  { keywords: ["chips", "chip"], emoji: "🥔" },
+  { keywords: ["water"], emoji: "💧" },
+  { keywords: ["beer"], emoji: "🍺" },
+  { keywords: ["wine"], emoji: "🍷" },
+  { keywords: ["champagne"], emoji: "🍾" },
+  { keywords: ["whiskey"], emoji: "🥃" },
+  { keywords: ["cocktail"], emoji: "🍸" },
+  { keywords: ["chips", "chip"], emoji: "🍟" },
   { keywords: ["popcorn"], emoji: "🍿" },
-  { keywords: ["ice cream"], emoji: "🍨" },
-  { keywords: ["pizza"], emoji: "🍕" },
-  { keywords: ["paper towel", "toilet paper"], emoji: "🧻" },
-  { keywords: ["detergent", "cleaner", "soap"], emoji: "🧼" },
-  { keywords: ["toothpaste"], emoji: "🪥" },
-  { keywords: ["shampoo"], emoji: "🧴" },
-  { keywords: ["vitamin"], emoji: "💊" }
+  { keywords: ["salt"], emoji: "🧂" }
 ];
+
 
 const DEPARTMENT_EMOJI = {
   "Fruits & Vegetables": "🥬",
@@ -99,13 +165,10 @@ let state = loadState();
 const listSelect = document.querySelector("#list-select");
 const newListButton = document.querySelector("#new-list");
 const deleteListButton = document.querySelector("#delete-list");
-const listNameInput = document.querySelector("#list-name");
-const renameListButton = document.querySelector("#rename-list");
+const editListNameButton = document.querySelector("#edit-list-name");
 const bulkInput = document.querySelector("#bulk-input");
 const parseButton = document.querySelector("#parse-button");
 const clearButton = document.querySelector("#clear-active");
-const singleItemInput = document.querySelector("#single-item");
-const addItemButton = document.querySelector("#add-item");
 const departmentsContainer = document.querySelector("#departments");
 
 listSelect.addEventListener("change", () => {
@@ -119,6 +182,18 @@ newListButton.addEventListener("click", () => {
   const list = createList(nextName);
   state.lists.unshift(list);
   state.activeListId = list.id;
+  saveState();
+  render();
+});
+
+editListNameButton.addEventListener("click", () => {
+  const active = getActiveList();
+  if (!active) return;
+
+  const nextName = window.prompt("Rename checklist", active.name);
+  if (!nextName || !nextName.trim()) return;
+
+  active.name = nextName.trim();
   saveState();
   render();
 });
@@ -141,16 +216,6 @@ deleteListButton.addEventListener("click", () => {
   render();
 });
 
-renameListButton.addEventListener("click", () => {
-  const active = getActiveList();
-  const nextName = listNameInput.value.trim();
-  if (!active || !nextName) return;
-
-  active.name = nextName;
-  saveState();
-  render();
-});
-
 parseButton.addEventListener("click", () => {
   const parsedItems = parseParagraph(bulkInput.value);
   if (!parsedItems.length) return;
@@ -158,22 +223,6 @@ parseButton.addEventListener("click", () => {
   parsedItems.forEach((name) => addItem(name));
   bulkInput.value = "";
   render();
-});
-
-addItemButton.addEventListener("click", () => {
-  const name = singleItemInput.value.trim();
-  if (!name) return;
-
-  addItem(name);
-  singleItemInput.value = "";
-  render();
-});
-
-singleItemInput.addEventListener("keydown", (event) => {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    addItemButton.click();
-  }
 });
 
 clearButton.addEventListener("click", () => {
@@ -255,6 +304,33 @@ function toggleItem(id) {
   render();
 }
 
+function deleteItem(id) {
+  const active = getActiveList();
+  if (!active) return;
+
+  active.items = active.items.filter((item) => item.id !== id);
+  saveState();
+  render();
+}
+
+function moveItemToDepartment(itemId, department) {
+  const active = getActiveList();
+  if (!active) return;
+
+  active.items = active.items.map((item) => {
+    if (item.id !== itemId) return item;
+
+    return {
+      ...item,
+      department: DEPARTMENTS.includes(department) ? department : "Other",
+      emoji: getItemEmoji(item.name, DEPARTMENTS.includes(department) ? department : "Other")
+    };
+  });
+
+  saveState();
+  render();
+}
+
 function groupByDepartment(items) {
   const grouped = Object.fromEntries(DEPARTMENTS.map((department) => [department, []]));
 
@@ -283,7 +359,6 @@ function renderListOptions(activeList) {
 
   if (activeList) {
     listSelect.value = activeList.id;
-    listNameInput.value = activeList.name;
   }
 }
 
@@ -306,13 +381,14 @@ function renderItems(activeList) {
 
     section.innerHTML = `
       <h3>${department}</h3>
-      <ul class="items">
+      <ul class="items" data-department="${department}">
         ${departmentItems
           .map(
             (item) => `
-          <li>
+          <li class="item-row" draggable="true" data-item-id="${item.id}">
             <input id="item-${item.id}" type="checkbox" ${item.completed ? "checked" : ""} data-id="${item.id}" />
             <label for="item-${item.id}" class="${item.completed ? "done" : ""}">${item.emoji} ${item.name}</label>
+            <button class="item-delete" type="button" data-id="${item.id}" aria-label="Delete ${item.name}">✕</button>
           </li>`
           )
           .join("")}
@@ -328,6 +404,43 @@ function renderItems(activeList) {
 
   departmentsContainer.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
     checkbox.addEventListener("change", () => toggleItem(checkbox.dataset.id));
+  });
+
+  departmentsContainer.querySelectorAll('.item-delete').forEach((button) => {
+    button.addEventListener("click", () => deleteItem(button.dataset.id));
+  });
+
+  departmentsContainer.querySelectorAll('.item-row').forEach((row) => {
+    row.addEventListener("dragstart", (event) => {
+      event.dataTransfer?.setData("text/plain", row.dataset.itemId || "");
+      event.dataTransfer?.setData("application/x-item-id", row.dataset.itemId || "");
+      row.classList.add("dragging");
+    });
+
+    row.addEventListener("dragend", () => {
+      row.classList.remove("dragging");
+    });
+  });
+
+  departmentsContainer.querySelectorAll('.items').forEach((list) => {
+    list.addEventListener("dragover", (event) => {
+      event.preventDefault();
+      list.classList.add("drag-over");
+    });
+
+    list.addEventListener("dragleave", () => {
+      list.classList.remove("drag-over");
+    });
+
+    list.addEventListener("drop", (event) => {
+      event.preventDefault();
+      list.classList.remove("drag-over");
+      const itemId = event.dataTransfer?.getData("application/x-item-id") || event.dataTransfer?.getData("text/plain");
+      const department = list.dataset.department;
+
+      if (!itemId || !department) return;
+      moveItemToDepartment(itemId, department);
+    });
   });
 }
 
