@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Costco Shopping Lists</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="left-column">
+        <header class="hero panel">
+          <p class="badge">COSTCO COMPANION</p>
+          <h1>Shopping Lists</h1>
+          <p class="subtext">Build your trip on the left, then shop from a department-sorted list on the right.</p>
+        </header>
+
+        <section class="panel">
+          <div class="checklist-header">
+            <h2>Checklist</h2>
+            <div class="header-actions">
+              <button id="new-list" class="icon-btn" aria-label="Create checklist">➕</button>
+              <button id="edit-list-name" class="icon-btn" aria-label="Edit checklist name">✏️</button>
+              <button id="delete-list" class="icon-btn danger" aria-label="Delete checklist">🗑️</button>
+            </div>
+          </div>
+          <label for="list-select">Saved checklists</label>
+          <div class="list-row">
+            <select id="list-select"></select>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>Add item(s)</h2>
+          <textarea
+            id="bulk-input"
+            placeholder="Example: bananas, bagels, chicken breast, greek yogurt, paper towels"
+          ></textarea>
+          <div class="actions">
+            <button id="parse-button">Parse & Add</button>
+            <button id="clear-active" class="secondary">Clear List</button>
+          </div>
+        </section>
+
+
+      </aside>
+
+      <section class="right-column panel" id="list-panel">
+        <div class="panel-heading">
+          <h2>Items by Department</h2>
+          <p class="subtext">Checked items stay in their department and shift to the bottom.</p>
+        </div>
+        <div id="departments"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
